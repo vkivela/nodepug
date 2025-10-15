@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Add movie
+    link(
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    )
+  body
+    h1 New movie
+    form(action='/addmovie', method='POST')
+      div.mb-3
+        label.form-label firstname
+        input(type="text", name="firstname").form-control
+      div.mb-3
+        label.form-label lastname
+        input(type="text", name="lastname").form-control
+      div.mb-3
+        label.form-label email
+        input(type="text", name="email").form-control
+      div.mb-3
+        label.form-label phone
+        input(type="text", name="phone").form-control
+      div
+        input(type="submit", value="Add").btn.btn-primary.btn-lg
